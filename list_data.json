@@ -1,22 +1,22 @@
 {
-	"movies": [
+	"vacations": [
 		{
-			"Title": "Lost In Translation",
-			"Director": "Sofia Coppola",
-			"Rating": "R",
-			"Year": "2003"
+			"City": "Ljubljana",
+			"Country": "Slovenia",
+			"Favorite Restaurant": "My Dumplings",
+			"Month and Year": "April 2025"
 		},
 		{
-			"Title": "Casino Royale",
-			"Director": "Martin Campbell",
-			"Rating": "PG-13",
-			"Year": "2006"
+			"City": "Antigua",
+			"Country": "Guatemala",
+			"Favorite Restaurant": "Artista de Cafe",
+			"Month and Year": "December 2024"
 		},
 		{
-			"Title": "The Dark Knight",
-			"Director": "Christopher Nolan",
-			"Rating": "PG-13",
-			"Year": "2008"
-		}
+			"City": "Chiang Mai",
+			"Country": "Thailand",
+			"Favorite Restaurant": "Coconut Shell",
+			"Month and Year": "January 2025"
+		},
 	]
 }
