@@ -1,45 +1,317 @@
-<!DOCTYPE HTML>  
-<html>  
-    <header>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="table_style.css">
-        <title>My Webpage Title</title>
-    </header>
-    <body>  
-        <!---Navigation--->
-        <!--This section of code defines the navigation bar at the top of the page.  The classes used here are defined in the style.css file.-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <!--This code defines the "My Webpage" link in the top left corner of the navigation pane-->
-                <a class="navbar-brand" href="./index.html">My Webpage</a>
-                <!--This code defines the "List" link in the top right corner of the navigation pane-->
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./list.html">List</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!--This section defines the middle section of the webpage-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                
-                <!-- This code is for the student name-->
-                <h1 class="masthead-heading text-uppercase mb-0">Saumya Lohia</h1>
-                <!--This code creates the two lines separating the student name from the subtitle-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!--This code creates the subheading underneath the line dividers-->
-                <p class="masthead-subheading font-weight-light mb-0">First Year Student in the MIMS Program at UC Berkeley</p>
-            </div>
-        </header>
-        <section class="text-center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saumya Lohia — Product Manager</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
 
-            <div class="col-md-6 col-lg-4 mb-5">
-                <!-- put your bio paragraph here; remember to use the correct html tags -->
-                <p>Originally from Texas, I'm pursuing my Master's degree in Information Management at UC Berkeley. I'm an aspiring product manager with a background in project management.</p>
-            </div>
-        </section>
-    </body>
+  <!-- ─── Navigation ─────────────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">SL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- ─── Hero ───────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hi, I'm</p>
+      <h1>Saumya Lohia</h1>
+      <p class="hero-subtitle">Product Manager · MIMS @ UC Berkeley</p>
+      <p class="hero-desc">I build user-centered products by connecting data, design, and strategy.<br>Currently open to PM internship &amp; full-time opportunities.</p>
+      <div class="hero-cta">
+        <a href="#case-studies" class="btn btn-primary btn-lg">View My Work</a>
+        <a href="#contact" class="btn btn-outline-light btn-lg ms-3">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ─── About ──────────────────────────────────────────────── -->
+  <section id="about" class="section-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-4 text-center">
+          <div class="avatar-placeholder">
+            <i class="fas fa-user fa-4x"></i>
+            <p class="mt-2 text-muted small">Add your photo here</p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Turning complexity into clarity</h2>
+          <p class="lead">Originally from Texas, I'm a Master's student in the Information Management &amp; Systems program at UC Berkeley, specializing in product management.</p>
+          <p>I bring a background in project management and a passion for understanding user needs, working cross-functionally, and shipping products that matter. I'm driven by the intersection of technology, data, and human behavior.</p>
+          <div class="about-facts row mt-4">
+            <div class="col-sm-4 fact">
+              <div class="fact-number">3+</div>
+              <div class="fact-label">Years PM Experience</div>
+            </div>
+            <div class="col-sm-4 fact">
+              <div class="fact-number">5+</div>
+              <div class="fact-label">Projects Shipped</div>
+            </div>
+            <div class="col-sm-4 fact">
+              <div class="fact-number">2</div>
+              <div class="fact-label">Internships</div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline-primary mt-4">Download Resume <i class="fas fa-download ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Experience ─────────────────────────────────────────── -->
+  <section id="experience" class="section-dark">
+    <div class="container">
+      <span class="section-label">Where I've Worked</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>Product Manager Intern</h4>
+              <span class="timeline-company">Company Name</span>
+            </div>
+            <span class="timeline-date">Summer 2024</span>
+            <ul>
+              <li>Led end-to-end discovery for a new onboarding feature, conducting 12 user interviews and synthesizing insights into a PRD.</li>
+              <li>Collaborated with engineering and design to ship an A/B-tested feature that improved activation rate by X%.</li>
+              <li>Defined and tracked KPIs using SQL and dashboards; presented weekly metrics to stakeholders.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>Project Manager</h4>
+              <span class="timeline-company">Previous Company / Organization</span>
+            </div>
+            <span class="timeline-date">2022 – 2023</span>
+            <ul>
+              <li>Managed a cross-functional team of 8 to deliver a product roadmap on time and under budget.</li>
+              <li>Established sprint cadence, ran retrospectives, and reduced blockers by 30% over two quarters.</li>
+              <li>Owned stakeholder communications and translated business requirements into actionable tickets.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>Undergraduate Research Assistant</h4>
+              <span class="timeline-company">University / Lab Name</span>
+            </div>
+            <span class="timeline-date">2021 – 2022</span>
+            <ul>
+              <li>Designed and executed usability studies for a mobile health application.</li>
+              <li>Synthesized research findings into design recommendations adopted by the dev team.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Case Studies ───────────────────────────────────────── -->
+  <section id="case-studies" class="section-light">
+    <div class="container">
+      <span class="section-label">Selected Work</span>
+      <h2 class="section-title">Case Studies</h2>
+      <p class="section-desc">Deep dives into problems I've solved — from discovery to delivery.</p>
+      <div class="row g-4 mt-2">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card">
+            <div class="case-tag">Mobile · UX Research</div>
+            <h4>Case Study Title One</h4>
+            <p>A brief 1–2 sentence description of the problem you tackled and the outcome you drove. What changed because of your work?</p>
+            <div class="case-metrics">
+              <span><strong>+24%</strong> Retention</span>
+              <span><strong>-18%</strong> Churn</span>
+            </div>
+            <a href="#" class="case-link">Read Case Study <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card">
+            <div class="case-tag">Data · Strategy</div>
+            <h4>Case Study Title Two</h4>
+            <p>Describe the business challenge, what you discovered through research and data, and how you drove alignment to ship the right solution.</p>
+            <div class="case-metrics">
+              <span><strong>3×</strong> Engagement</span>
+              <span><strong>$X</strong> ARR Impact</span>
+            </div>
+            <a href="#" class="case-link">Read Case Study <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card">
+            <div class="case-tag">0→1 · Growth</div>
+            <h4>Case Study Title Three</h4>
+            <p>Explain how you identified a market gap, validated the idea with users, built a roadmap, and collaborated with cross-functional partners to launch.</p>
+            <div class="case-metrics">
+              <span><strong>10K+</strong> Users</span>
+              <span><strong>4.8★</strong> Rating</span>
+            </div>
+            <a href="#" class="case-link">Read Case Study <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills ─────────────────────────────────────────────── -->
+  <section id="skills" class="section-dark">
+    <div class="container">
+      <span class="section-label">Toolkit</span>
+      <h2 class="section-title">Skills</h2>
+      <div class="row g-4 mt-2">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card">
+            <i class="fas fa-compass skill-icon"></i>
+            <h5>Product Strategy</h5>
+            <p>Roadmapping, OKRs, prioritization frameworks (RICE, MoSCoW), PRDs, competitive analysis</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card">
+            <i class="fas fa-users skill-icon"></i>
+            <h5>User Research</h5>
+            <p>User interviews, usability testing, surveys, affinity mapping, journey mapping, persona development</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card">
+            <i class="fas fa-chart-bar skill-icon"></i>
+            <h5>Data & Analytics</h5>
+            <p>SQL, Python, A/B testing, funnel analysis, Mixpanel, Amplitude, Tableau, Google Analytics</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card">
+            <i class="fas fa-pen-ruler skill-icon"></i>
+            <h5>Design & Delivery</h5>
+            <p>Figma, wireframing, Agile/Scrum, Jira, Notion, cross-functional collaboration, stakeholder management</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Education ──────────────────────────────────────────── -->
+  <section id="education" class="section-light">
+    <div class="container">
+      <span class="section-label">Background</span>
+      <h2 class="section-title">Education</h2>
+      <div class="row g-4 mt-2">
+        <div class="col-md-6">
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h5>Master of Information Management &amp; Systems</h5>
+              <p class="edu-school">UC Berkeley, School of Information</p>
+              <p class="edu-date">2023 – Present</p>
+              <p class="edu-detail">Relevant coursework: Product Management, Human-Computer Interaction, Data Engineering, Research Methods</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div>
+              <h5>Bachelor of Science — [Your Major]</h5>
+              <p class="edu-school">University Name</p>
+              <p class="edu-date">2019 – 2023</p>
+              <p class="edu-detail">Honors / relevant coursework / activities to highlight.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ────────────────────────────────────────────── -->
+  <section id="contact" class="section-contact">
+    <div class="container text-center">
+      <span class="section-label">Let's Talk</span>
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-desc">I'm actively looking for PM internship and full-time opportunities.<br>Feel free to reach out — I'd love to connect.</p>
+      <a href="mailto:your@email.com" class="btn btn-primary btn-lg mt-3">
+        <i class="fas fa-envelope me-2"></i>Send Me an Email
+      </a>
+      <div class="social-links mt-5">
+        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/slohia-19" target="_blank" rel="noopener" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" title="Resume / CV">
+          <i class="fas fa-file-alt"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
+  <footer>
+    <p>Designed &amp; built by Saumya Lohia · <a href="https://slohia-19.github.io">slohia-19.github.io</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Shrink navbar on scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Smooth active nav highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 80) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+  </script>
+</body>
 </html>
