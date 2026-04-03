@@ -1,14 +1,14 @@
 /* ── Variables ─────────────────────────────────────────────── */
 :root {
-  --accent:     #4d7c5f;
-  --accent-dark:#3a6349;
-  --dark:       #1e2f27;
-  --dark-card:  #273d32;
-  --light:      #f4f7f2;
+  --accent:     #6b9e80;
+  --accent-dark:#568470;
+  --dark:       #2c3d35;
+  --dark-card:  #374f44;
+  --light:      #f5f9f6;
   --light-card: #ffffff;
-  --text-dark:  #e6f0ea;
-  --text-light: #1e2f27;
-  --muted:      #7a9485;
+  --text-dark:  #e8f2ec;
+  --text-light: #243029;
+  --muted:      #8aaa97;
   --radius:     12px;
   --transition: 0.3s ease;
 }
@@ -26,7 +26,7 @@ a { color: inherit; text-decoration: none; }
   transition: background var(--transition), padding var(--transition), box-shadow var(--transition);
 }
 #mainNav.scrolled {
-  background: rgba(30, 47, 39, 0.96);
+  background: rgba(44, 61, 53, 0.96);
   padding: 0.6rem 0;
   box-shadow: 0 2px 20px rgba(0,0,0,0.15);
   backdrop-filter: blur(10px);
@@ -54,7 +54,7 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(135deg, #1e2f27 0%, #2d4d3a 50%, #1a3328 100%);
+  background: linear-gradient(135deg, #2c3d35 0%, #3d5c4a 50%, #263830 100%);
   overflow: hidden;
 }
 #hero::before {
@@ -384,7 +384,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ── Footer ────────────────────────────────────────────────── */
 footer {
-  background: #141f19;
+  background: #1e2c25;
   text-align: center;
   padding: 1.5rem;
   font-size: 0.85rem;
