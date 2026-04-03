@@ -28,31 +28,17 @@
   </nav>
 
   <!-- ─── About ──────────────────────────────────────────────── -->
-  <section id="about" class="section-light" style="padding-top: 140px;">
+  <section id="about" class="section-light" style="padding-top: 140px; background: #fff;">
     <div class="container">
-      <div class="row align-items-center g-5">
+      <div class="row align-items-center g-5 justify-content-center">
         <div class="col-lg-4 text-center">
           <img src="photo.jpg" alt="Saumya Lohia" class="avatar-placeholder" style="object-fit: cover;" />
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-5">
           <span class="section-label">About Me</span>
-          <h2 class="section-title">Turning complexity into clarity</h2>
-          <p class="lead">Originally from Texas, I'm a Master's student in the Information Management &amp; Systems program at UC Berkeley, specializing in product management.</p>
-          <p>I bring a background in project management and a passion for understanding user needs, working cross-functionally, and shipping products that matter. I'm driven by the intersection of technology, data, and human behavior.</p>
-          <div class="about-facts row mt-4">
-            <div class="col-sm-4 fact">
-              <div class="fact-number">3+</div>
-              <div class="fact-label">Years PM Experience</div>
-            </div>
-            <div class="col-sm-4 fact">
-              <div class="fact-number">5+</div>
-              <div class="fact-label">Projects Shipped</div>
-            </div>
-            <div class="col-sm-4 fact">
-              <div class="fact-number">2</div>
-              <div class="fact-label">Internships</div>
-            </div>
-          </div>
+          <h2 class="section-title">Hi, I'm Saumya!</h2>
+          <p class="lead">Originally from Texas, I'm currently a Master's student in the Information Management &amp; Systems program at UC Berkeley, specializing in product management.</p>
+          <p>My experience has spanned engineering, supply chain, healthcare, and project management. In all of these roles, I've seen common themes: understanding users, navigating complexity, and creating meaningful impact. I'm passionate about bringing my experience to building thoughtful, user-centered products and defining clear, actionable strategy.</p>
           <a href="https://drive.google.com/file/d/1GzHEar2Y93HeWIgP-y9a-6OvQQUbMp_D/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline-primary mt-4">Download Resume</a>
         </div>
       </div>
@@ -62,18 +48,16 @@
       <!-- ─── Photos ────────────────────────────────────────────── -->
       <span class="section-label">A Little More</span>
       <h2 class="section-title mt-1">Outside of Work</h2>
-      <div class="row g-4 mt-2">
-        <div class="col-md-6">
-          <div class="photo-placeholder">
-            <i class="fas fa-image fa-3x"></i>
-            <p>Add a photo here</p>
-          </div>
+      <p>I've traveled to over 25 countries, took a year off to solo travel, and I love reading nonfiction books to learn more about history. I've hiked the Inca Trail, climbed a volcano in Guatemala, and hiked a glacier in Patagonia.</p>
+      <div class="row g-3 mt-2">
+        <div class="col-md-4 fade-up" style="transition-delay: 0s;">
+          <img src="argentina.jpeg" alt="description" class="photo-placeholder photo-placeholder-sm" style="object-fit: cover;" />
         </div>
-        <div class="col-md-6">
-          <div class="photo-placeholder">
-            <i class="fas fa-image fa-3x"></i>
-            <p>Add a photo here</p>
-          </div>
+        <div class="col-md-4 fade-up" style="transition-delay: 0.15s;">
+          <img src="guatemala.jpeg" alt="description" class="photo-placeholder photo-placeholder-sm" style="object-fit: cover;" />
+        </div>
+        <div class="col-md-4 fade-up" style="transition-delay: 0.3s;">
+          <img src="ireland.JPG" alt="description" class="photo-placeholder photo-placeholder-sm" style="object-fit: cover;" />
         </div>
       </div>
     </div>
@@ -85,5 +69,17 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>

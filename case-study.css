@@ -2,27 +2,44 @@
 
 /* Hero */
 .cs-hero {
-  background: linear-gradient(135deg, #2c3d35 0%, #3d5c4a 60%, #263830 100%);
+  background: #f5f9f6;
+  border-bottom: 4px solid #6b9e80;
   padding: 10rem 0 5rem;
-  color: #fff;
+  color: var(--text-light);
+}
+.cs-hero-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.cs-hero-photo-placeholder {
+  aspect-ratio: 16 / 9;
+  background: #ddeee5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a8ccb5;
+  font-size: 1.5rem;
 }
 .cs-back {
   font-size: 0.88rem;
   font-weight: 600;
-  color: rgba(255,255,255,0.55);
+  color: #8aaa97;
   letter-spacing: 0.04em;
   transition: color 0.2s;
 }
-.cs-back:hover { color: #a8d5b5; }
+.cs-back:hover { color: #6b9e80; }
 .cs-tag {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #a8d5b5;
-  background: rgba(168,213,181,0.15);
-  border: 1px solid rgba(168,213,181,0.3);
+  color: #6b9e80;
+  background: rgba(107,158,128,0.1);
+  border: 1px solid rgba(107,158,128,0.3);
   padding: 0.3rem 0.9rem;
   border-radius: 50px;
 }
@@ -31,10 +48,11 @@
   font-weight: 800;
   line-height: 1.1;
   margin: 1rem 0 0.75rem;
+  color: var(--text-light);
 }
 .cs-subtitle {
   font-size: 1.15rem;
-  color: rgba(255,255,255,0.65);
+  color: #5a7a68;
   max-width: 600px;
   line-height: 1.6;
   margin-bottom: 2rem;
@@ -44,31 +62,52 @@
   flex-wrap: wrap;
   gap: 1.5rem;
   font-size: 0.88rem;
-  color: rgba(255,255,255,0.5);
+  color: #8aaa97;
 }
-.cs-meta i { color: #a8d5b5; }
+.cs-meta i { color: #6b9e80; }
 
 /* Overview cards */
-.cs-overview { padding: 3rem 0; }
+.cs-overview { padding: 3rem 0 0; }
+.cs-key-takeaways {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  background: #eaf4ee;
+  border-left: 4px solid #6b9e80;
+  border-radius: 0 10px 10px 0;
+}
+.cs-key-takeaways-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b9e80;
+  margin-bottom: 0.5rem;
+}
+.cs-key-takeaways p {
+  font-size: 1rem;
+  color: #3d5c4a;
+  line-height: 1.7;
+  margin: 0;
+}
 .overview-card {
   background: #fff;
-  border: 1px solid #d4e6da;
+  border: 1px solid #ddeee5;
   border-radius: 12px;
   padding: 1.5rem;
   height: 100%;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.overview-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(77,124,95,0.1); }
+.overview-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(107,158,128,0.12); }
 .overview-card.highlight {
-  background: rgba(77,124,95,0.06);
-  border-color: rgba(77,124,95,0.3);
+  background: #eaf4ee;
+  border-color: rgba(107,158,128,0.35);
 }
 .overview-label {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #6b9e80;
   margin-bottom: 0.5rem;
 }
 .overview-card p {
@@ -78,7 +117,7 @@
   margin: 0;
 }
 .overview-card.highlight p { color: #333; }
-.overview-card.highlight strong { color: var(--accent); }
+.overview-card.highlight strong { color: #568470; }
 
 /* Body / article */
 .cs-body { background: #fff; padding: 5rem 0; }
@@ -91,7 +130,7 @@
   color: var(--text-light);
   margin-bottom: 1.2rem;
   padding-bottom: 0.6rem;
-  border-bottom: 2px solid rgba(77,124,95,0.2);
+  border-bottom: 2px solid rgba(107,158,128,0.25);
 }
 .cs-section p {
   font-size: 1rem;
@@ -102,8 +141,8 @@
 
 /* Callout */
 .cs-callout {
-  background: rgba(77,124,95,0.07);
-  border-left: 4px solid var(--accent);
+  background: #eaf4ee;
+  border-left: 4px solid #6b9e80;
   border-radius: 0 8px 8px 0;
   padding: 1.2rem 1.5rem;
   font-size: 0.97rem;
@@ -111,7 +150,7 @@
   line-height: 1.7;
   margin: 1.5rem 0;
 }
-.cs-callout strong { color: var(--accent); }
+.cs-callout strong { color: #568470; }
 
 /* Insight grid */
 .cs-insight-grid {
@@ -121,27 +160,27 @@
   margin: 1.5rem 0;
 }
 .cs-insight {
-  background: #f2f7f4;
-  border: 1px solid #d4e6da;
+  background: #fff;
+  border: 1px solid #ddeee5;
   border-radius: 10px;
   padding: 1.2rem;
 }
 .cs-insight-number {
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--accent);
+  color: #6b9e80;
   margin-bottom: 0.5rem;
 }
 .cs-insight p { font-size: 0.88rem; color: #555; line-height: 1.6; margin: 0; }
 
 /* Image placeholder */
 .cs-image-placeholder {
-  background: #eef5f1;
-  border: 2px dashed rgba(77,124,95,0.3);
+  background: #eaf4ee;
+  border: 2px dashed rgba(107,158,128,0.35);
   border-radius: 12px;
   padding: 3rem;
   text-align: center;
-  color: #aaa;
+  color: #8aaa97;
   margin: 1.5rem 0;
 }
 .cs-image-placeholder p { margin: 0.75rem 0 0; font-size: 0.88rem; }
@@ -155,20 +194,20 @@
 }
 .cs-metric {
   text-align: center;
-  background: #f2f7f4;
-  border: 1px solid #d4e6da;
+  background: #fff;
+  border: 1px solid #ddeee5;
   border-radius: 10px;
   padding: 1.5rem 1rem;
 }
 .cs-metric-number {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--accent);
+  color: #6b9e80;
   line-height: 1;
 }
 .cs-metric-label {
   font-size: 0.8rem;
-  color: #888;
+  color: #8aaa97;
   margin-top: 0.4rem;
   font-weight: 500;
 }
@@ -183,9 +222,8 @@
 
 /* Subheadings within sections */
 .cs-subheading {
-  font-size: 1rem;
   font-weight: 700;
-  color: var(--accent);
+  color: #6b9e80;
   margin: 2rem 0 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -200,8 +238,8 @@
   margin: 1.5rem 0;
 }
 .cs-two-col-item {
-  background: #f2f7f4;
-  border: 1px solid #d4e6da;
+  background: #fff;
+  border: 1px solid #ddeee5;
   border-radius: 10px;
   padding: 1.4rem;
 }
@@ -210,13 +248,13 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #6b9e80;
   margin-bottom: 0.75rem;
 }
 
 /* Metrics table */
 .cs-metrics-table {
-  border: 1px solid #d4e6da;
+  border: 1px solid #ddeee5;
   border-radius: 10px;
   overflow: hidden;
   margin: 1.5rem 0;
@@ -224,7 +262,7 @@
 .cs-metrics-row-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid #e0e0ee;
+  border-bottom: 1px solid #ddeee5;
 }
 .cs-metrics-row-item:last-child { border-bottom: none; }
 .cs-metrics-col {
@@ -233,20 +271,89 @@
   color: #444;
   line-height: 1.5;
 }
-.cs-metrics-col:first-child { border-right: 1px solid #e0e0ee; }
+.cs-metrics-col:first-child { border-right: 1px solid #ddeee5; }
 .cs-metrics-col.label {
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent);
-  background: rgba(77,124,95,0.06);
+  color: #6b9e80;
+  background: #eaf4ee;
 }
 
 /* Nav footer */
 .cs-nav-footer { padding: 3rem 0; }
 
+/* ── Overview B — challenge left, sidebar right ────────────── */
+.cs-overview-b { padding: 3rem 0; }
+.cs-overview-b-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.cs-overview-b-challenge {
+  background: #fff;
+  border: 1px solid #ddeee5;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cs-overview-b-challenge-text {
+  font-size: 1.05rem;
+  color: #243029;
+  line-height: 1.7;
+  margin: 0.5rem 0 1.5rem;
+}
+.cs-overview-b-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid #ddeee5;
+}
+.cs-overview-b-stat-num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #6b9e80;
+  line-height: 1;
+}
+.cs-overview-b-stat-desc {
+  font-size: 0.88rem;
+  color: #8aaa97;
+}
+.cs-overview-b-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cs-overview-b-item {
+  background: #fff;
+  border: 1px solid #ddeee5;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+}
+.cs-overview-b-item p {
+  font-size: 0.9rem;
+  color: #5a7a68;
+  line-height: 1.6;
+  margin: 0.4rem 0 0;
+}
+.cs-overview-b-item.highlight-item {
+  background: #eaf4ee;
+  border-color: rgba(107,158,128,0.35);
+}
+.cs-overview-b-item.highlight-item p { color: #3d5c4a; }
+
 /* Responsive */
+@media (max-width: 768px) {
+  .cs-hero-b-inner { grid-template-columns: 1fr; }
+  .cs-overview-b-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 576px) {
   .cs-hero { padding: 8rem 0 3rem; }
   .cs-meta { gap: 0.75rem; }
