@@ -181,6 +181,68 @@
 }
 .cs-learnings li { margin-bottom: 0.4rem; }
 
+/* Subheadings within sections */
+.cs-subheading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 2rem 0 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.85rem;
+}
+
+/* Two-column MVP / Roadmap layout */
+.cs-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.cs-two-col-item {
+  background: #f8f8ff;
+  border: 1px solid #e0e0ee;
+  border-radius: 10px;
+  padding: 1.4rem;
+}
+.cs-two-col-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+/* Metrics table */
+.cs-metrics-table {
+  border: 1px solid #e0e0ee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+.cs-metrics-row-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #e0e0ee;
+}
+.cs-metrics-row-item:last-child { border-bottom: none; }
+.cs-metrics-col {
+  padding: 0.9rem 1.2rem;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+}
+.cs-metrics-col:first-child { border-right: 1px solid #e0e0ee; }
+.cs-metrics-col.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  background: rgba(108,99,255,0.05);
+}
+
 /* Nav footer */
 .cs-nav-footer { padding: 3rem 0; }
 
