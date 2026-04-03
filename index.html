@@ -21,7 +21,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -29,25 +28,29 @@
   </nav>
 
   <!-- ─── Hero ───────────────────────────────────────────────── -->
-  <section id="hero">
-    <div class="hero-content">
-      <p class="hero-eyebrow">Hi, I'm</p>
-      <h1>Saumya Lohia</h1>
-      <p class="hero-subtitle">Product Manager · MIMS @ UC Berkeley</p>
-      <p class="hero-desc">I build user-centered products by connecting data, design, and strategy.<br>Currently open to PM internship &amp; full-time opportunities.</p>
-      <div class="hero-cta">
-        <a href="#case-studies" class="btn btn-primary btn-lg">View My Work</a>
-        <a href="about.html" class="btn btn-outline-light btn-lg ms-3">About Me</a>
-        <a href="#contact" class="btn btn-outline-light btn-lg ms-3">Get in Touch</a>
+  <section id="hero" class="hero-a">
+    <div class="container hero-a-inner">
+      <div class="hero-a-text">
+        <div class="hero-a-accent-line"></div>
+        <p class="hero-eyebrow">Hi, I'm</p>
+        <h1 class="hero-a-name">Saumya<br>Lohia</h1>
+        <p class="hero-a-subtitle">Product Manager · MIMS @ UC Berkeley</p>
+        <p class="hero-a-desc">I build user-centered products by connecting data, design, and strategy. Currently open to PM internship &amp; full-time opportunities.</p>
+        <div class="hero-cta">
+          <a href="#case-studies" class="btn btn-primary btn-lg">View My Work</a>
+          <a href="about.html" class="btn btn-outline-primary btn-lg ms-3">About Me</a>
+          <a href="#contact" class="btn btn-outline-primary btn-lg ms-3">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-a-photo">
+        <img src="photo.jpg" alt="Saumya Lohia" class="hero-a-photo-placeholder" style="object-fit: cover;" />
       </div>
     </div>
-    <div class="hero-scroll-hint">
-      <a href="#case-studies"><i class="fas fa-chevron-down"></i></a>
-    </div>
+    <div class="hero-scroll-hint"><a href="#case-studies"><i class="fas fa-chevron-down"></i></a></div>
   </section>
 
   <!-- ─── Case Studies ───────────────────────────────────────── -->
-  <section id="case-studies" class="section-light">
+  <section id="case-studies" class="section-dark">
     <div class="container">
       <span class="section-label">Selected Work</span>
       <h2 class="section-title">Case Studies</h2>
@@ -97,68 +100,22 @@
     </div>
   </section>
 
-  <!-- ─── Skills ─────────────────────────────────────────────── -->
-  <section id="skills" class="section-dark">
-    <div class="container">
-      <span class="section-label">Toolkit</span>
-      <h2 class="section-title">Skills</h2>
-      <div class="row g-4 mt-2">
-
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card">
-            <i class="fas fa-compass skill-icon"></i>
-            <h5>Product Strategy</h5>
-            <p>Roadmapping, OKRs, prioritization frameworks (RICE, MoSCoW), PRDs, competitive analysis</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card">
-            <i class="fas fa-users skill-icon"></i>
-            <h5>User Research</h5>
-            <p>User interviews, usability testing, surveys, affinity mapping, journey mapping, persona development</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card">
-            <i class="fas fa-chart-bar skill-icon"></i>
-            <h5>Data & Analytics</h5>
-            <p>SQL, Python, A/B testing, funnel analysis, Mixpanel, Amplitude, Tableau, Google Analytics</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card">
-            <i class="fas fa-pen-ruler skill-icon"></i>
-            <h5>Design & Delivery</h5>
-            <p>Figma, wireframing, Agile/Scrum, Jira, Notion, cross-functional collaboration, stakeholder management</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- ─── Contact ────────────────────────────────────────────── -->
-  <section id="contact" class="section-contact">
-    <div class="container text-center">
-      <span class="section-label">Let's Talk</span>
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="section-desc">I'm actively looking for PM internship and full-time opportunities.<br>Feel free to reach out — I'd love to connect.</p>
-      <a href="mailto:saumya.lohia@berkeley.edu" class="btn btn-primary btn-lg mt-3">
-        <i class="fas fa-envelope me-2"></i>Send Me an Email
-      </a>
-      <div class="social-links mt-5">
-        <a href="https://www.linkedin.com/in/saumyalohia/" target="_blank" rel="noopener" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/slohia-19" target="_blank" rel="noopener" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="#" title="Resume / CV">
-          <i class="fas fa-file-alt"></i>
-        </a>
+  <section id="contact" class="section-contact-slim">
+    <div class="container">
+      <div class="contact-slim-inner">
+        <div>
+          <p class="contact-slim-label">Let's Talk</p>
+          <p class="contact-slim-text">Open to PM internship &amp; full-time opportunities.</p>
+        </div>
+        <div class="contact-slim-actions">
+          <a href="mailto:saumya.lohia@berkeley.edu" class="btn btn-primary">
+            <i class="fas fa-envelope me-2"></i>Email Me
+          </a>
+          <a href="https://www.linkedin.com/in/saumyalohia/" target="_blank" rel="noopener" class="contact-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/slohia-19" target="_blank" rel="noopener" class="contact-icon" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="contact-icon" title="Resume"><i class="fas fa-file-alt"></i></a>
+        </div>
       </div>
     </div>
   </section>
