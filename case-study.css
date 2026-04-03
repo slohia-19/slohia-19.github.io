@@ -2,7 +2,7 @@
 
 /* Hero */
 .cs-hero {
-  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 60%, #0d1b2a 100%);
+  background: linear-gradient(135deg, #1e2f27 0%, #2d4d3a 60%, #1a3328 100%);
   padding: 10rem 0 5rem;
   color: #fff;
 }
@@ -13,16 +13,16 @@
   letter-spacing: 0.04em;
   transition: color 0.2s;
 }
-.cs-back:hover { color: var(--accent); }
+.cs-back:hover { color: #a8d5b5; }
 .cs-tag {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
-  background: rgba(108,99,255,0.15);
-  border: 1px solid rgba(108,99,255,0.3);
+  color: #a8d5b5;
+  background: rgba(168,213,181,0.15);
+  border: 1px solid rgba(168,213,181,0.3);
   padding: 0.3rem 0.9rem;
   border-radius: 50px;
 }
@@ -46,22 +46,22 @@
   font-size: 0.88rem;
   color: rgba(255,255,255,0.5);
 }
-.cs-meta i { color: var(--accent); }
+.cs-meta i { color: #a8d5b5; }
 
 /* Overview cards */
 .cs-overview { padding: 3rem 0; }
 .overview-card {
   background: #fff;
-  border: 1px solid #e0e0ee;
+  border: 1px solid #d4e6da;
   border-radius: 12px;
   padding: 1.5rem;
   height: 100%;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.overview-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(108,99,255,0.08); }
+.overview-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(77,124,95,0.1); }
 .overview-card.highlight {
-  background: rgba(108,99,255,0.06);
-  border-color: rgba(108,99,255,0.3);
+  background: rgba(77,124,95,0.06);
+  border-color: rgba(77,124,95,0.3);
 }
 .overview-label {
   font-size: 0.72rem;
@@ -91,7 +91,7 @@
   color: var(--text-light);
   margin-bottom: 1.2rem;
   padding-bottom: 0.6rem;
-  border-bottom: 2px solid rgba(108,99,255,0.15);
+  border-bottom: 2px solid rgba(77,124,95,0.2);
 }
 .cs-section p {
   font-size: 1rem;
@@ -102,7 +102,7 @@
 
 /* Callout */
 .cs-callout {
-  background: rgba(108,99,255,0.06);
+  background: rgba(77,124,95,0.07);
   border-left: 4px solid var(--accent);
   border-radius: 0 8px 8px 0;
   padding: 1.2rem 1.5rem;
@@ -121,8 +121,8 @@
   margin: 1.5rem 0;
 }
 .cs-insight {
-  background: #f8f8ff;
-  border: 1px solid #e0e0ee;
+  background: #f2f7f4;
+  border: 1px solid #d4e6da;
   border-radius: 10px;
   padding: 1.2rem;
 }
@@ -136,8 +136,8 @@
 
 /* Image placeholder */
 .cs-image-placeholder {
-  background: #f0f0fa;
-  border: 2px dashed rgba(108,99,255,0.3);
+  background: #eef5f1;
+  border: 2px dashed rgba(77,124,95,0.3);
   border-radius: 12px;
   padding: 3rem;
   text-align: center;
@@ -155,8 +155,8 @@
 }
 .cs-metric {
   text-align: center;
-  background: #f8f8ff;
-  border: 1px solid #e0e0ee;
+  background: #f2f7f4;
+  border: 1px solid #d4e6da;
   border-radius: 10px;
   padding: 1.5rem 1rem;
 }
@@ -200,8 +200,8 @@
   margin: 1.5rem 0;
 }
 .cs-two-col-item {
-  background: #f8f8ff;
-  border: 1px solid #e0e0ee;
+  background: #f2f7f4;
+  border: 1px solid #d4e6da;
   border-radius: 10px;
   padding: 1.4rem;
 }
@@ -216,7 +216,7 @@
 
 /* Metrics table */
 .cs-metrics-table {
-  border: 1px solid #e0e0ee;
+  border: 1px solid #d4e6da;
   border-radius: 10px;
   overflow: hidden;
   margin: 1.5rem 0;
@@ -240,7 +240,7 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--accent);
-  background: rgba(108,99,255,0.05);
+  background: rgba(77,124,95,0.06);
 }
 
 /* Nav footer */
