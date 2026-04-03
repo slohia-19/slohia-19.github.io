@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Case Study 2 — Saumya Lohia</title>
+  <title>Margin — Saumya Lohia</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="portfolio.css" />
@@ -32,13 +32,13 @@
       <a href="index.html#case-studies" class="cs-back">
         <i class="fas fa-arrow-left me-2"></i>Back to Case Studies
       </a>
-      <div class="cs-tag mt-4">Data · Strategy</div>
-      <h1 class="cs-title">Case Study Title Two</h1>
-      <p class="cs-subtitle">A brief tagline summarizing the project and the impact it had.</p>
+      <div class="cs-tag mt-4">AI · Developer Tools · Hackathon</div>
+      <h1 class="cs-title">Margin</h1>
+      <p class="cs-subtitle">A VS Code extension that uses AI to make code readable for designers and PMs — without requiring an engineering background.</p>
       <div class="cs-meta">
-        <span><i class="fas fa-calendar me-2"></i>Timeline: Month Year – Month Year</span>
+        <span><i class="fas fa-calendar me-2"></i>Hackathon Sprint</span>
         <span><i class="fas fa-user me-2"></i>Role: Product Manager</span>
-        <span><i class="fas fa-building me-2"></i>Company / Team Name</span>
+        <span><i class="fas fa-code me-2"></i>VS Code Extension API · OpenAI API · Cursor · Claude</span>
       </div>
     </div>
   </section>
@@ -50,25 +50,25 @@
         <div class="col-md-3 col-sm-6">
           <div class="overview-card">
             <div class="overview-label">The Problem</div>
-            <p>One sentence describing the core user or business problem you were solving.</p>
+            <p>Designers and PMs who work alongside engineers struggle to parse code — understanding what a component does, how it's structured, or why it was written a certain way.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="overview-card">
             <div class="overview-label">My Role</div>
-            <p>PM lead, responsible for discovery, roadmap, and cross-functional alignment.</p>
+            <p>PM on a team of designers and PMs — problem definition, MVP scoping, feature prioritization, and roadmap planning under a tight hackathon time constraint.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="overview-card">
             <div class="overview-label">The Team</div>
-            <p>2 engineers, 1 designer, 1 data analyst, and a stakeholder from marketing.</p>
+            <p>Designers and product managers — none of us had built a VS Code extension before. First hackathon for the whole team.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="overview-card highlight">
             <div class="overview-label">Outcome</div>
-            <p><strong>3×</strong> engagement · <strong>$X</strong> ARR impact within one quarter.</p>
+            <p>Shipped a <strong>functional VS Code extension</strong> with AI-powered code annotations within a single hackathon sprint.</p>
           </div>
         </div>
       </div>
@@ -80,79 +80,108 @@
     <div class="container">
       <div class="cs-content">
 
+        <!-- Context -->
         <section class="cs-section">
           <h2>Background &amp; Context</h2>
-          <p>Describe the product, the company stage, and the broader context. What was happening in the market or within the product that made this problem important to solve now?</p>
-          <p>You can include a second paragraph here with more context — user base size, existing metrics, business goals, or constraints you were working within.</p>
+          <p>Designers increasingly work in or alongside codebases — reviewing pull requests, inspecting component files, or trying to understand why something looks the way it does. But without an engineering background, even well-written code can feel opaque.</p>
+          <p>At our first hackathon, our team of designers and product managers set out to build something for ourselves: a tool that lets designers engage meaningfully with code without needing to fully learn it first.</p>
         </section>
 
+        <!-- Problem -->
         <section class="cs-section">
-          <h2>Defining the Problem</h2>
-          <p>Walk through how you identified and framed the problem. What signals (qualitative or quantitative) pointed you toward this area?</p>
+          <h2>The Problem</h2>
+          <p>Designers and PMs who work closely with engineering teams often find themselves staring at code they can't fully parse — understanding what a component does, how it's structured, or why it was written a certain way. Margin was built to close that gap.</p>
           <div class="cs-callout">
-            <strong>Problem Statement:</strong> [User type] needs a way to [accomplish goal] because [insight/barrier that makes the current experience painful or broken].
+            <strong>Problem Statement:</strong> Designers and PMs need a way to understand code in context because the gap between how engineers write code and how non-engineers can read it creates friction, slows collaboration, and leaves designers dependent on engineers to interpret their own files.
           </div>
         </section>
 
+        <!-- What It Does -->
         <section class="cs-section">
-          <h2>Discovery &amp; Research</h2>
-          <p>Describe your research methods — data analysis, user interviews, competitive review. What were the most important things you learned?</p>
+          <h2>What Margin Does</h2>
+          <p>Margin lives inside VS Code as an extension. Users toggle it on and it immediately goes to work — visually annotating the code in front of them. The result is a layer of comprehension on top of existing code, without modifying the code itself.</p>
+          <div class="cs-insight-grid">
+            <div class="cs-insight">
+              <div class="cs-insight-number"><i class="fas fa-layer-group"></i></div>
+              <p><strong>Code chunk highlighting</strong> — Margin groups and highlights sections of code by functionality, giving users a visual sense of how the file is structured at a glance.</p>
+            </div>
+            <div class="cs-insight">
+              <div class="cs-insight-number"><i class="fas fa-comment-dots"></i></div>
+              <p><strong>AI-powered hover descriptions</strong> — Hovering over a highlighted chunk surfaces a plain-language explanation of what that code does, contextualized within the broader project.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- How We Built It -->
+        <section class="cs-section">
+          <h2>How We Built It</h2>
+          <p>We built Margin as a native VS Code extension and integrated the OpenAI API to handle code parsing and generate natural language explanations. The extension reads the active file, segments it into logical chunks, and feeds those chunks to the model to produce context-aware descriptions on demand.</p>
+          <div class="cs-two-col">
+            <div class="cs-two-col-item">
+              <div class="cs-two-col-label">Stack</div>
+              <ul class="cs-learnings">
+                <li>VS Code Extension API</li>
+                <li>OpenAI API</li>
+                <li>Cursor</li>
+                <li>Claude</li>
+              </ul>
+            </div>
+            <div class="cs-two-col-item">
+              <div class="cs-two-col-label">How It Works</div>
+              <ul class="cs-learnings">
+                <li>Reads the active file in VS Code</li>
+                <li>Segments it into logical code chunks</li>
+                <li>Feeds chunks to the model for context-aware descriptions</li>
+                <li>Surfaces explanations on hover — no code modification</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Challenges -->
+        <section class="cs-section">
+          <h2>Challenges</h2>
+          <p>Building Margin was harder than any of us anticipated — in the best possible way. None of us had built a VS Code extension before, and integrating with the OpenAI API was a steep learning curve. We spent meaningful time just figuring out how the API worked before we could apply it toward what we actually wanted to build.</p>
+          <div class="cs-callout">
+            There was a certain irony in wishing Margin existed while we were struggling to build it — we could have really used an AI explanation of our own extension code mid-build.
+          </div>
+        </section>
+
+        <!-- What We're Proud Of -->
+        <section class="cs-section">
+          <h2>What We're Proud Of</h2>
+          <p>This was our first hackathon. Our primary goal going in was simple: build something real and usable. We did that.</p>
+          <p>Beyond the output, we're proud of how we navigated ambiguity as a team — defining the problem, scoping the MVP, and shipping something functional within a tight time constraint. We also came away with a genuine appreciation for AI as a development accelerator; tools like Cursor and Claude made it possible for a team without deep engineering backgrounds to build something this technical.</p>
+        </section>
+
+        <!-- What's Next -->
+        <section class="cs-section">
+          <h2>What's Next</h2>
+          <p>Margin is a foundation, not a finished product. The roadmap focuses on deepening the comprehension layer and improving the overall experience.</p>
           <div class="cs-insight-grid">
             <div class="cs-insight">
               <div class="cs-insight-number">01</div>
-              <p>Key insight from your research — what surprised you or confirmed a hypothesis.</p>
+              <p><strong>Information architecture view</strong> — a high-level visual map of how a codebase is organized, helping designers understand structure before diving into individual files.</p>
             </div>
             <div class="cs-insight">
               <div class="cs-insight-number">02</div>
-              <p>Second key insight — a behavioral pattern, a user pain point, or a data anomaly.</p>
+              <p><strong>Code heatmaps</strong> — visual indicators of complexity, frequency of change, or other signals that help designers know where to focus.</p>
             </div>
             <div class="cs-insight">
               <div class="cs-insight-number">03</div>
-              <p>Third key insight — something that shaped your solution or helped you prioritize.</p>
+              <p><strong>Design &amp; UX improvements</strong> — polish the extension interface to feel as considered as the products our users design themselves.</p>
             </div>
           </div>
         </section>
 
+        <!-- Learnings -->
         <section class="cs-section">
-          <h2>The Solution</h2>
-          <p>Describe what you built. How did you prioritize features? What tradeoffs did you make?</p>
-          <div class="cs-image-placeholder">
-            <i class="fas fa-image fa-3x"></i>
-            <p>Add a screenshot or wireframe here</p>
-          </div>
-          <p>Explain the final design decisions and how they addressed the root causes you found in research.</p>
-        </section>
-
-        <section class="cs-section">
-          <h2>Results &amp; Impact</h2>
-          <p>Quantify the impact wherever possible. What metrics moved? How did user behavior change?</p>
-          <div class="cs-metrics-row">
-            <div class="cs-metric">
-              <div class="cs-metric-number">3×</div>
-              <div class="cs-metric-label">Engagement</div>
-            </div>
-            <div class="cs-metric">
-              <div class="cs-metric-number">$X</div>
-              <div class="cs-metric-label">ARR Impact</div>
-            </div>
-            <div class="cs-metric">
-              <div class="cs-metric-number">X%</div>
-              <div class="cs-metric-label">Conversion Lift</div>
-            </div>
-            <div class="cs-metric">
-              <div class="cs-metric-number">X wks</div>
-              <div class="cs-metric-label">Discovery to Launch</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="cs-section">
-          <h2>Learnings &amp; Reflection</h2>
-          <p>What did you learn from this project? What would you do differently?</p>
+          <h2>Learnings &amp; Takeaways</h2>
           <ul class="cs-learnings">
-            <li>Learning or takeaway number one — something about the process, team, or product.</li>
-            <li>Learning or takeaway number two — a mistake made and what you'd change next time.</li>
-            <li>Learning or takeaway number three — a new skill or framework you developed.</li>
+            <li><strong>New technical skills are learnable under pressure.</strong> We each learned how to build a VS Code extension from scratch — a genuinely new skill for all of us, acquired in a single sprint.</li>
+            <li><strong>Scope management is a product skill.</strong> With limited time, we had to make fast, deliberate tradeoffs — deciding which features made the MVP and which could wait. That discipline shaped the product significantly.</li>
+            <li><strong>AI is a real development accelerator.</strong> Tools like Cursor and Claude made it possible for a team without deep engineering backgrounds to ship something genuinely technical. We experienced firsthand what AI-assisted development enables.</li>
+            <li><strong>Build for yourself first.</strong> The clearest signal that we were solving a real problem was that we wanted the tool ourselves — and felt its absence while building it.</li>
           </ul>
         </section>
 
