@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Margin — Saumya Lohia</title>
+  <title>margin — Saumya Lohia</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="portfolio.css" />
@@ -18,7 +18,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link active" href="index.html#case-studies">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html#case-studies">Selected Work</a></li>
           <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1GzHEar2Y93HeWIgP-y9a-6OvQQUbMp_D/view?usp=drive_link" target="_blank" rel="noopener">Resume</a></li>
         </ul>
       </div>
@@ -29,19 +29,16 @@
   <section class="cs-hero">
     <div class="container">
       <a href="index.html#case-studies" class="cs-back">
-        <i class="fas fa-arrow-left me-2"></i>Back to Case Studies
+        <i class="fas fa-arrow-left me-2"></i>Back to Selected Work
       </a>
-      <div class="cs-hero-photos">
-        <div class="cs-hero-photo-placeholder"><i class="fas fa-image"></i></div>
-        <div class="cs-hero-photo-placeholder"><i class="fas fa-image"></i></div>
-        <div class="cs-hero-photo-placeholder"><i class="fas fa-image"></i></div>
+      <div class="cs-hero-photos cs-hero-photos-2">
+        <img src="margin.png" alt="BidReady Berkeley" class="cs-hero-photo-placeholder" />
+        <img src="margin-logo.jpg" alt="BidReady Berkeley" class="cs-hero-photo-placeholder" />
       </div>
       <div class="cs-tag mt-4">AI · Developer Tools · Hackathon</div>
-      <h1 class="cs-title">Margin</h1>
-      <p class="cs-subtitle">A VS Code extension that uses AI to make code readable for designers and PMs — without requiring an engineering background.</p>
+      <h1 class="cs-title">margin</h1>
+      <p class="cs-subtitle">A VS Code extension that uses AI to make code readable for designers and PMs — bridging the gap between developers and designers.</p>
       <div class="cs-meta">
-        <span><i class="fas fa-calendar me-2"></i>Hackathon Sprint</span>
-        <span><i class="fas fa-user me-2"></i>Role: Product Manager</span>
         <span><i class="fas fa-building me-2"></i>UC Berkeley Hackathon</span>
       </div>
     </div>
@@ -50,35 +47,35 @@
   <!-- ─── Overview Cards ─────────────────────────────────────── -->
   <section class="cs-overview section-light">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-md-3 col-sm-6">
+      <div class="row g-3 justify-content-center">
+        <div class="col-auto">
           <div class="overview-card">
             <div class="overview-label">Timeline</div>
-            <p>1 hackathon sprint.</p>
+            <p>36 hours</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-auto">
           <div class="overview-card">
             <div class="overview-label">My Role</div>
-            <p>PM — problem definition, MVP scoping, feature prioritization, and roadmap planning.</p>
+            <p>Product Lead · Developer</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-auto">
           <div class="overview-card">
             <div class="overview-label">Tools</div>
-            <p>VS Code Extension API · OpenAI API · Cursor · Claude</p>
+            <p>VS Code Extension API · OpenAI API · Cursor · Claude · Figma · Javascript</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-auto">
           <div class="overview-card">
             <div class="overview-label">Team</div>
-            <p>Designers and product managers — first hackathon for the whole team.</p>
+            <p>3 Designers, 1 Product Manager</p>
           </div>
         </div>
       </div>
       <div class="cs-key-takeaways">
         <div class="cs-key-takeaways-label">Key Takeaways</div>
-        <p>Add a 2–3 sentence summary of the most important outcomes or lessons from this project.</p>
+        <p>Working under time constraints pushed us to ask: What is our minimum viable product? In addition, I learned how to wear different hats — I worked as a developer and a product lead, and this experience taught me to consider solutions from different angles and pushed my own skillset.</p>
       </div>
     </div>
   </section>
@@ -91,42 +88,54 @@
         <!-- Context -->
         <section class="cs-section">
           <h2>Background &amp; Context</h2>
-          <p>Designers increasingly work in or alongside codebases — reviewing pull requests, inspecting component files, or trying to understand why something looks the way it does. But without an engineering background, even well-written code can feel opaque.</p>
-          <p>At our first hackathon, our team of designers and product managers set out to build something for ourselves: a tool that lets designers engage meaningfully with code without needing to fully learn it first.</p>
+          <p>The gap between designers and developers is shrinking, with AI tools that allow designers to generate large amounts of code easily. However, without an engineering background, even well-written code can feel opaque. We asked: how might we help designers engage meaningfully with code without having an engineering background?</p>
         </section>
 
         <!-- Problem -->
         <section class="cs-section">
-          <h2>The Problem</h2>
-          <p>Designers and PMs who work closely with engineering teams often find themselves staring at code they can't fully parse — understanding what a component does, how it's structured, or why it was written a certain way. Margin was built to close that gap.</p>
+          <h2>Defining the Problem</h2>
+          <p>Designers and PMs who work closely with engineering teams often find themselves staring at code they can't fully parse — understanding what a component does, how it's structured, or why it was written a certain way. We built margin to close that gap.</p>
           <div class="cs-callout">
-            <strong>Problem Statement:</strong> Designers and PMs need a way to understand code in context because the gap between how engineers write code and how non-engineers can read it creates friction, slows collaboration, and leaves designers dependent on engineers to interpret their own files.
+            <strong>Problem Statement:</strong> Designers and PMs need a way to understand code in context to bridge the gap between developers and design teams, and to empower designers to confidently navigate codebases.
           </div>
         </section>
 
-        <!-- What It Does -->
+        <!-- Our Solution -->
         <section class="cs-section">
-          <h2>What Margin Does</h2>
-          <p>Margin lives inside VS Code as an extension. Users toggle it on and it immediately goes to work — visually annotating the code in front of them. The result is a layer of comprehension on top of existing code, without modifying the code itself.</p>
+          <h2>Our Solution</h2>
+          <p>margin lives inside VS Code as an extension. Users toggle it on and it immediately goes to work — visually annotating the code in front of them. The result is a layer of comprehension on top of existing code, without modifying the code itself.</p>
           <div class="cs-insight-grid">
             <div class="cs-insight">
-              <div class="cs-insight-number"><i class="fas fa-layer-group"></i></div>
-              <p><strong>Code chunk highlighting</strong> — Margin groups and highlights sections of code by functionality, giving users a visual sense of how the file is structured at a glance.</p>
+              <div class="cs-insight-number">01</div>
+              <p><strong>Toggle Mode</strong> — a switch that allows users to call up margin when needed.</p>
             </div>
             <div class="cs-insight">
-              <div class="cs-insight-number"><i class="fas fa-comment-dots"></i></div>
+              <div class="cs-insight-number">02</div>
+              <p><strong>Code breakdown and highlighting</strong> — margin groups and highlights sections of code by functionality, giving users a visual sense of how the file is structured at a glance.</p>
+            </div>
+            <div class="cs-insight">
+              <div class="cs-insight-number">03</div>
               <p><strong>AI-powered hover descriptions</strong> — Hovering over a highlighted chunk surfaces a plain-language explanation of what that code does, contextualized within the broader project.</p>
             </div>
+            <div class="cs-insight">
+              <div class="cs-insight-number">04</div>
+              <p><strong>File visualization</strong> — A high-level preview of the overall structure of the code, allowing users to quickly understand what elements make up the code.</p>
+            </div>
+          </div>
+          <div class="cs-section-imgs">
+            <img src="file-viz.png" alt="margin solution screenshot" />
+            <img src="code-highlighting.png" alt="margin solution screenshot" />
           </div>
         </section>
 
         <!-- How We Built It -->
         <section class="cs-section">
           <h2>How We Built It</h2>
-          <p>We built Margin as a native VS Code extension and integrated the OpenAI API to handle code parsing and generate natural language explanations. The extension reads the active file, segments it into logical chunks, and feeds those chunks to the model to produce context-aware descriptions on demand.</p>
+          <p>We built margin as a native VS Code extension and integrated the OpenAI API to handle code parsing and generate natural language explanations. The extension reads the active file, segments it into logical chunks, and feeds those chunks to the model to produce context-aware descriptions on demand.</p>
+          <p>One of our main challenges was that none of us had built a VS Code extension before. I spent a lot of time understanding how to integrate with the OpenAI API, parsing code, and debugging.</p>
           <div class="cs-two-col">
             <div class="cs-two-col-item">
-              <div class="cs-two-col-label">Stack</div>
+              <div class="cs-two-col-label">Tools</div>
               <ul class="cs-learnings">
                 <li>VS Code Extension API</li>
                 <li>OpenAI API</li>
@@ -135,10 +144,11 @@
               </ul>
             </div>
             <div class="cs-two-col-item">
-              <div class="cs-two-col-label">How It Works</div>
+              <div class="cs-two-col-label">Core Technical Flow</div>
               <ul class="cs-learnings">
+                <li>User toggles margin "On"</li>
                 <li>Reads the active file in VS Code</li>
-                <li>Segments it into logical code chunks</li>
+                <li>Segments file into logical code chunks</li>
                 <li>Feeds chunks to the model for context-aware descriptions</li>
                 <li>Surfaces explanations on hover — no code modification</li>
               </ul>
@@ -146,26 +156,49 @@
           </div>
         </section>
 
-        <!-- Challenges -->
+        <!-- Impacts -->
         <section class="cs-section">
-          <h2>Challenges</h2>
-          <p>Building Margin was harder than any of us anticipated — in the best possible way. None of us had built a VS Code extension before, and integrating with the OpenAI API was a steep learning curve. We spent meaningful time just figuring out how the API worked before we could apply it toward what we actually wanted to build.</p>
-          <div class="cs-callout">
-            There was a certain irony in wishing Margin existed while we were struggling to build it — we could have really used an AI explanation of our own extension code mid-build.
+          <h2>Impacts</h2>
+          <p>Our roadmap focuses on deepening the comprehension layer and improving the overall experience.</p>
+          <div class="cs-insight-grid">
+            <div class="cs-insight">
+              <div class="cs-insight-number">01</div>
+              <p><strong>Bridging Design &amp; Code</strong> — Designers can gain a clear mental model of how their ideas are translated into real, editable code, removing the "black box."</p>
+            </div>
+            <div class="cs-insight">
+              <div class="cs-insight-number">02</div>
+              <p><strong>Building Technical Confidence</strong> — By visually explaining structure and logic, margin reduces intimidation and helps designers feel capable of editing and experimenting with code.</p>
+            </div>
+            <div class="cs-insight">
+              <div class="cs-insight-number">03</div>
+              <p><strong>Enhancing Collaboration</strong> — Developers and designers can communicate more effectively through shared understanding, speeding up iteration and improving final product quality.</p>
+            </div>
           </div>
+          <h5 class="cs-subheading">Tradeoffs</h5>
+          <p>With 36 hours, every feature we added was a feature we chose over something else. Two things we cut deliberately:</p>
+          <div class="cs-insight-grid">
+            <div class="cs-insight">
+              <div class="cs-insight-number">01</div>
+              <p><strong>Codebase-level navigation</strong> — understanding how files relate to each other, not just what's inside one. While this would have been valuable, it turned out to be too complex to ship well in time.</p>
+            </div>
+            <div class="cs-insight">
+              <div class="cs-insight-number">02</div>
+              <p><strong>Inline editing suggestions</strong> — helping designers make small code changes, not just understand them. However, this would have taken the MVP in a different direction than pure comprehension.</p>
+            </div>
+          </div>
+          <p>We shipped the comprehension layer first. Everything else builds on top of that.</p>
         </section>
 
-        <!-- What We're Proud Of -->
+        <!-- Retrospective -->
         <section class="cs-section">
-          <h2>What We're Proud Of</h2>
-          <p>This was our first hackathon. Our primary goal going in was simple: build something real and usable. We did that.</p>
-          <p>Beyond the output, we're proud of how we navigated ambiguity as a team — defining the problem, scoping the MVP, and shipping something functional within a tight time constraint. We also came away with a genuine appreciation for AI as a development accelerator; tools like Cursor and Claude made it possible for a team without deep engineering backgrounds to build something this technical.</p>
-        </section>
-
-        <!-- What's Next -->
-        <section class="cs-section">
-          <h2>What's Next</h2>
-          <p>Margin is a foundation, not a finished product. The roadmap focuses on deepening the comprehension layer and improving the overall experience.</p>
+          <h2>Retrospective</h2>
+          <ul class="cs-learnings">
+            <li><strong>New technical skills are learnable under pressure.</strong> We each learned how to build a VS Code extension from scratch — a genuinely new skill for all of us, acquired in a single sprint.</li>
+            <li><strong>Scope management is a product skill.</strong> With limited time, we had to make fast, deliberate tradeoffs — deciding which features made the MVP and which could wait. That discipline shaped the product significantly.</li>
+            <li><strong>AI is a real development accelerator.</strong> Tools like Cursor and Claude made it possible for a team without deep engineering backgrounds to ship something genuinely technical. We experienced firsthand what AI-assisted development enables.</li>
+            <li><strong>Build for yourself first.</strong> The clearest signal that we were solving a real problem was that we benefited from the tool itself.</li>
+          </ul>
+          <h5 class="cs-subheading">If I had more time...</h5>
           <div class="cs-insight-grid">
             <div class="cs-insight">
               <div class="cs-insight-number">01</div>
@@ -177,20 +210,10 @@
             </div>
             <div class="cs-insight">
               <div class="cs-insight-number">03</div>
-              <p><strong>Design &amp; UX improvements</strong> — polish the extension interface to feel as considered as the products our users design themselves.</p>
+              <p><strong>Validate with real users</strong> — we built for ourselves, which was a strong signal, but I'd want to put it in front of 5–10 designers on engineering-heavy teams to learn where the comprehension layer actually breaks down.</p>
             </div>
           </div>
-        </section>
-
-        <!-- Learnings -->
-        <section class="cs-section">
-          <h2>Learnings &amp; Takeaways</h2>
-          <ul class="cs-learnings">
-            <li><strong>New technical skills are learnable under pressure.</strong> We each learned how to build a VS Code extension from scratch — a genuinely new skill for all of us, acquired in a single sprint.</li>
-            <li><strong>Scope management is a product skill.</strong> With limited time, we had to make fast, deliberate tradeoffs — deciding which features made the MVP and which could wait. That discipline shaped the product significantly.</li>
-            <li><strong>AI is a real development accelerator.</strong> Tools like Cursor and Claude made it possible for a team without deep engineering backgrounds to ship something genuinely technical. We experienced firsthand what AI-assisted development enables.</li>
-            <li><strong>Build for yourself first.</strong> The clearest signal that we were solving a real problem was that we wanted the tool ourselves — and felt its absence while building it.</li>
-          </ul>
+          <img src="margin-team.jpeg" alt="margin retrospective" class="cs-section-img" />
         </section>
 
       </div>
