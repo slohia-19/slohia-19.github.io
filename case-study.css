@@ -18,7 +18,7 @@
   align-items: flex-start;
   margin-bottom: 2.5rem;
 }
-.cs-hero-photos-2 img:first-child {
+.cs-hero-photos-2 > :first-child {
   width: 58%;
   height: auto;
   border-radius: 12px;
@@ -27,7 +27,7 @@
   margin-right: -5%;
   box-shadow: 8px 8px 28px rgba(0,0,0,0.18);
 }
-.cs-hero-photos-2 img:last-child {
+.cs-hero-photos-2 > :last-child {
   width: 50%;
   height: auto;
   border-radius: 12px;
@@ -428,6 +428,14 @@ img.cs-hero-photo-placeholder {
   border-color: rgba(0,0,0,0.12);
 }
 .cs-overview-b-item.highlight-item p { color: #333333; }
+
+.cs-research-note {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  color: #777777;
+  font-size: 0.9rem;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
