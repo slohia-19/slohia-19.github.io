@@ -87,13 +87,14 @@
         <section class="cs-section">
           <h2>Background &amp; Context</h2>
           <p>Information workers are increasingly expected to use AI in their workflows to improve productivity. Emerging LLM-based tools, such as agent builders, aim to help information workers with their everyday tasks.</p>
-          <p>However, in the current landscape, LLM-based tools are hard to use, easily fail, and often overpromise on value. Information workers need further guidance when creating tools such as AI agents, and may not understand what benefits LLM tools could provide in their workflow.</p>
+          <p>However, in the current landscape, LLM-based tools are hard to use, easily fail, and often overpromise on value. Information workers need further guidance when creating tools such as AI agents. Furthermore, they may not understand what benefits LLM tools could provide in their workflow.</p>
         </section>
 
         <section class="cs-section">
           <h2>Defining the Problem</h2>
-          <p>Microsoft 365 Agent Builder is a no-code/low-code tool that lets information workers create custom AI agents for everyday tasks. As part of a semester-long research engagement, I collaborated with a team to evaluate where the tool succeeded, where it fell short, and what Microsoft should build next.</p>
-          <p>Our work surfaced a clear pattern: users could get an agent running, but they couldn't figure out what it was actually capable of — and they couldn't trust what it was doing. We translated those findings into three prioritized product recommendations.</p>
+          <p>Microsoft 365 Agent Builder is a no-code/low-code tool that lets information workers create custom AI agents for everyday tasks. As part of a semester-long research engagement, I collaborated with a team to evaluate the tool and provide recommendations to Microsoft to improve the product.</p>
+          <p>When considering what questions should guide our research, we considered how information workers may have different skill levels and comfort with using AI tools. Thus, we aimed to ensure that workers of multiple skill levels could feel confident developing and using these tools.</p>
+          <p>In addition, we had to consider different areas of research. With guidance from our client, we developed two domains that we wanted to further explore: users' mental models of AI, and the actual guidance users expect when using and interacting with an agent-building tool.</p>
           <div class="cs-callout">
             <strong>Key Questions:</strong>
             <ol style="margin: 0.5rem 0 0; padding-left: 1.25rem;">
@@ -101,6 +102,16 @@
               <li>What mental models do users bring to the agent-building experience?</li>
             </ol>
           </div>
+          <p>Finally, our task was to evaluate our research questions using different methods and present prioritized product recommendations to the client team.</p>
+
+          <p class="cs-subheading">Measuring Success</p>
+          <p>To evaluate our findings, we defined three success criteria:</p>
+          <ol>
+            <li>Surface recurring patterns in the support users expect</li>
+            <li>Identify where current M365 Agent Builder falls short</li>
+            <li>Produce actionable design recommendations</li>
+          </ol>
+          <p>Our work surfaced a clear pattern: users could get an agent running, but they couldn't figure out what it was actually capable of — and they couldn't trust what it was doing. We translated those findings into three prioritized product recommendations.</p>
         </section>
 
         <section class="cs-section">
@@ -115,10 +126,12 @@
         </section>
 
         <section class="cs-section">
-          <h2>Research Methods</h2>
+          <h2>Methods</h2>
+          <p>To evaluate our research questions and develop our product strategy recommendations, we selected three user research methods. These helped us understand the current landscape and context of agent building platforms, then dive deeper into actual users' experience and thought processes.</p>
 
           <p class="cs-subheading">Competitive Analysis</p>
-          <p>We evaluated seven agent-building tools across the full agent lifecycle — from creation to monitoring to refinement — scoring each on seven tasks: create, customize, connect data, test, publish, monitor health, and update.</p>
+          <p>Beginning with a competitive analysis helped us to identify gaps and opportunities in current tools. By testing these tools ourselves, we gained an understanding of what worked in agent creation, and what features users value.</p>
+          <p>We evaluated seven agent-building tools across the full agent lifecycle — from creation to monitoring to refinement:</p>
           <table class="table table-bordered" style="font-size: 0.9rem; margin: 1.5rem 0; border-radius: 8px; overflow: hidden;">
             <thead style="background: #f0f0f0;">
               <tr>
@@ -136,23 +149,27 @@
               <tr><td>Replit Agent</td><td>High-code</td></tr>
             </tbody>
           </table>
+          <p>We scored each tool on seven tasks: create, customize, connect data, test, publish, monitor health, and update. This gave us a benchmark for where Microsoft 365 Agent Builder stood relative to the market.</p>
 
           <p class="cs-subheading">User Interviews</p>
-          <p>We conducted 11 semi-structured interviews (30 minutes each, via Zoom) with employed adults across consulting, finance, technology, and education — spanning ages 18–64 and a wide range of AI familiarity. Questions explored participants' current AI usage, their expectations for agent behavior, and what their ideal agent-building experience would look like.</p>
+          <p>Our next step was developing specific user testing protocols to evaluate Microsoft 365 Agent Builder. These interviews helped us understand user perceptions and expectations. Our goal with these interviews was to understand users' current mental models around LLM models and AI agents.</p>
+          <p>We conducted 11 semi-structured interviews (30 minutes each, via Zoom) with employed adults across consulting, finance, technology, and education, spanning ages 18–64 and a wide range of AI familiarity. Questions explored participants' current AI usage, their expectations for agent behavior, and what their ideal agent building experience would look like.</p>
 
           <p class="cs-subheading">Usability Testing</p>
-          <p>Immediately following each interview, participants completed a usability test of M365 Agent Builder. We gave them a realistic scenario (building an agent for a NASA employee to summarize meeting documents and draft emails) and asked them to complete six tasks mirroring the agent lifecycle. We coded each task as <em>Completed</em>, <em>Completed with Difficulty</em>, or <em>Unable to Complete</em>.</p>
+          <p>Immediately following each interview, participants completed a usability test of M365 Agent Builder. We gave them a realistic scenario (building an agent for a NASA employee to summarize meeting documents and draft emails) and asked them to complete six tasks mirroring the agent building lifecycle. We coded each task as <em>Completed</em>, <em>Completed with Difficulty</em>, or <em>Unable to Complete</em>.</p>
+          <p>These usability tests helped us observe the current flow and how it aligned with user expectations, and ultimately refine our product strategy recommendations. Our goal was to identify what specific support users need when creating and interacting with an AI agent.</p>
         </section>
 
         <section class="cs-section">
           <h2>Key Findings</h2>
+          <p>Our findings directly informed our product recommendations. We analyzed the results from each research method to deliver specific areas for action within M365 Agent Builder to the Microsoft client team.</p>
 
           <p class="cs-subheading">Competitive Analysis: Post-Launch Lifecycle is a Market-Wide Gap</p>
-          <p>All seven tools handled agent creation and testing well. The gaps emerged in everything that comes after launch.</p>
+          <p>All seven tools handled agent creation and testing well. However, gaps emerged further in the lifecycle:</p>
           <div class="cs-insight-grid">
             <div class="cs-insight">
               <div class="cs-insight-number">01</div>
-              <p><strong>Agent monitoring:</strong> Only 2 of 7 tools succeeded. Claude Agent SDK, Vertex, Gumloop, Lindy, and Replit all failed.</p>
+              <p><strong>Agent customization:</strong> Only 2 of 7 tools succeeded. The other five — including Claude Agent SDK, Vertex, Gumloop, Lindy, and Replit — failed.</p>
             </div>
             <div class="cs-insight">
               <div class="cs-insight-number">02</div>
@@ -160,47 +177,32 @@
             </div>
             <div class="cs-insight">
               <div class="cs-insight-number">03</div>
-              <p><strong>Data source integration:</strong> 2 of 7 had issues, including Google and Claude Agent SDK. M365 was not an outlier — the whole market underserves users post-launch.</p>
+              <p><strong>Data source integration:</strong> 2 of 7 had issues, including Google and Claude Agent SDK.</p>
             </div>
           </div>
+          <p>Examining the current landscape helped us understand potential areas where Microsoft could position itself as a leader in the market.</p>
 
-          <p class="cs-subheading" style="margin-top: 2rem;">Key Themes</p>
-          <p>After conducting the interviews, we analyzed our results through affinity mapping. Three key themes emerged:</p>
+          <p class="cs-subheading" style="margin-top: 2rem;">User Interviews: Key Themes from Qualitative Analysis</p>
+          <p>After conducting user interviews, we analyzed our results through affinity mapping. Three key themes emerged:</p>
           <div class="cs-insight-grid">
             <div class="cs-insight">
               <div class="cs-insight-number">01</div>
-              <p><strong>Collaborative onboarding.</strong> Users didn't want to figure out what to build alone — they wanted the system to ask questions and guide them toward useful configurations.<br><br><em>"What are you going to use the agent for? And then recommend tools to install on the agent proactively. That would be very helpful."</em></p>
+              <p><strong>Collaborative onboarding.</strong> Users didn't want to figure out what to build alone. They wanted the system to ask questions and guide them toward useful configurations.<br><br><em>"What are you going to use the agent for? And then recommend tools to install on the agent proactively. That would be very helpful."</em></p>
             </div>
             <div class="cs-insight">
               <div class="cs-insight-number">02</div>
-              <p><strong>Verbal prompting and follow-up suggestions.</strong> Users expected the agent to tell them what it needed and to proactively surface what it could do.<br><br><em>"If I tell it what I want it to do, I would expect it to come back and tell me what it needs to know in order to do it."</em></p>
+              <p><strong>Verbal prompting and follow-up suggestions.</strong> After building the agent, users expected the agent to tell them what context it needed to accomplish tasks, and to proactively surface what actions it could do.<br><br><em>"If I tell it what I want it to do, I would expect it to come back and tell me what it needs to know in order to do it."</em></p>
             </div>
             <div class="cs-insight">
               <div class="cs-insight-number">03</div>
-              <p><strong>Transparency into agent reasoning.</strong> Without visibility into its logic, users couldn't trust or correct the agent.<br><br><em>"I just like to see what the agent is thinking... because if I find that it's going off in a direction I don't want, I want to trace back."</em></p>
+              <p><strong>Transparency into agent reasoning.</strong> Users wanted to understand what the agent was doing, not just see an output. Without visibility into its logic, they couldn't trust or correct it.<br><br><em>"I just like to see what the agent is thinking... because if I find that it's going off in a direction I don't want, I want to trace back."</em></p>
             </div>
           </div>
 
-          <p class="cs-subheading" style="margin-top: 2rem;">Friction Throughout the Core Flow</p>
-          <p>Our usability tests were evaluated by scoring participants' performance on the six tasks. Testing was the one task everyone completed easily — but nearly everything before and after it created friction. The ambiguous "Describe" and "Configure" prompts confused most users, who expected a chat-based setup flow modeled on their experience with tools like ChatGPT.</p>
-          <table class="table table-bordered" style="font-size: 0.9rem; margin: 1.5rem 0;">
-            <thead style="background: #f0f0f0;">
-              <tr>
-                <th>Task</th>
-                <th>Completed</th>
-                <th>With Difficulty</th>
-                <th>Unable</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Create an agent</td><td>6/11</td><td>5/11</td><td>0</td></tr>
-              <tr><td>Edit name &amp; description</td><td>8/11</td><td>3/11</td><td>0</td></tr>
-              <tr><td>Upload a document</td><td>6/11</td><td>4/11</td><td>1</td></tr>
-              <tr><td>Connect a website URL</td><td>7/11</td><td>2/11</td><td>2</td></tr>
-              <tr><td>Test the agent</td><td>11/11</td><td>0</td><td>0</td></tr>
-              <tr><td>Publish / share</td><td>5/11</td><td>5/11</td><td>1</td></tr>
-            </tbody>
-          </table>
+          <p class="cs-subheading" style="margin-top: 2rem;">Usability Tests: Friction Throughout the Core Flow</p>
+          <p>Usability tests were evaluated by scoring participants' performance on six tasks in the workflow of agent creation. These tasks were refined from the competitive analysis our team conducted.</p>
+          <img src="ms_usabilitytest_table.png" alt="Usability test results for 11 participants across six tasks, coded as Completed, Completed with difficulty, or Unable to complete" style="width:100%; height:auto; border-radius:8px; margin: 1.5rem 0;" />
+          <p>Testing was the one task everyone completed easily — but nearly everything before and after it created friction. The ambiguous "Describe" and "Configure" prompts confused most users, who expected a chat-based setup flow modeled on their experience with tools like ChatGPT.</p>
         </section>
 
         <section class="cs-section">
@@ -217,7 +219,7 @@
             </div>
             <div class="cs-insight">
               <div class="cs-insight-number">03</div>
-              <p><strong>Process Transparency.</strong> Add thinking-state indicators so users can see what the agent is doing as it works. Make workspace integrations explicit and visible — users were surprised the agent wasn't already connected to their files. Claude Code's step-by-step status feedback is a useful model here.</p>
+              <p><strong>Process Transparency.</strong> Add thinking-state indicators so users can see what the agent is doing as it works. Make workspace integrations explicit and visible — users were surprised the agent wasn't already connected to their files and assumed integrations that didn't exist. Claude Code's step-by-step status feedback is a useful model here.</p>
             </div>
           </div>
         </section>
@@ -225,7 +227,7 @@
         <section class="cs-section">
           <h2>Impact &amp; Reflection</h2>
           <p>Our findings were delivered to Microsoft as a formal research report with prioritized recommendations. The research confirmed that the core usability gaps in M365 Agent Builder weren't unique to the product — they reflected a market-wide failure to support users through the full agent lifecycle.</p>
-          <p>If I were to extend this work, I'd want to run a follow-up study testing the proposed conversational onboarding flow to see whether it measurably reduces task abandonment. I would also want to explore whether transparency features (thinking states, integration visibility) change users' trust in agent outputs over time.</p>
+          <p>If I were to extend this work, I would run a follow-up study testing the proposed conversational onboarding flow to see whether it measurably reduces task abandonment. I would also want to explore whether transparency features (thinking states, integration visibility) change users' trust in agent outputs over time.</p>
         </section>
 
         <p class="cs-research-note"><em>Research conducted in partnership with Microsoft as part of a graduate UX research program.</em></p>
